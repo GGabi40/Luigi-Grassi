@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi Grassi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+</head>
+<body>
+    <header class="header">
+        <aside class="menu">
+            <a href="#top" id="logo">Luigi</a>
+
+            <ul class="menu-links">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#nuestro-espacio">Nuestros Espacios</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#reservar">Reservar</a></li>
+            </ul>
+        </aside>
+    </header>
+
+    <div class="space"></div>
+
+    <!-- Principal -->
+    <section class="section-main" id="top">
+        <div class="contain-all">
+            <div class="contain-text">
+                <h1>Luigi Grassi</h1>
+                <h2>desde 1983.</h2>
+                <p>Basado en el Norte de Italia, con música 
+                    ambiente para aprovechar con la 
+                    familia y amigos queridos.</p>
+            </div>
+            
+            <div class="contain-img">
+                <img src="./assets/imgs/Foto Principal.webp" alt="Nuestro Restaurante">
+            </div>
+        </div>
+    </section>
+
+    <!-- Platos Destacados -->
+    <section class="section-min">
+        <h3>Platos Destacados</h2>
+
+        <div class="principal-plate">
+
+            <div class="cards">
+                <img src="./assets/imgs/destacado1.jpg" alt="Sopa de Mariscos" loading="lazy">
+                <p>Zuppa di frutti di mare</p>
+            </div>
+
+            <div class="cards">
+                <img src="./assets/imgs/destacado2.jpg" alt="Carne com legumes e macarrao" loading="lazy">
+                <p>Carne con verdure e pasta</p>
+            </div>
+
+            <div class="cards">
+                <img src="./assets/imgs/destacado3.jpg" alt="Macarrao ao pesto" loading="lazy">
+                <p>Pasta al pesto</p>
+            </div>
+
+            <div class="cards">
+                <img src="./assets/imgs/destacado4.jpg" alt="Pedaço de Pizza" loading="lazy">
+                <p>Pizza</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Nuestro Espacio -->
+    <section class="section-min" id="nuestro-espacio">
+        <h3>Nuestros Espacios</h2>
+
+        <div class="carousel">
+            <div class="carousel-contenedor">
+                <button aria-label="Anterior" class="carousel-anterior">
+                    ➤
+                </button>
+
+                <div class="carousel-lista">
+                    <div class="carousel-elemento">
+                        <img src="./assets/imgs/espacio1.jpg" alt="Mesa de cena">
+                        <p>Mesa de cena, espacio interno del restaurante</p>
+                    </div>
+
+                    <div class="carousel-elemento">
+                        <img src="./assets/imgs/espacio2.jpg" alt="Espacio exterior con mesas">
+                        <p>Espacio externo del restaurante</p>
+                    </div>
+                    <div class="carousel-elemento">
+                        <img src="./assets/imgs/espacio3.jpg" alt="Espacio interior con cajeros">
+                        <p>Cajeros y más detalles del restaurante</p>
+                    </div>
+
+                    <div class="carousel-elemento">
+                        <img src="./assets/imgs/Foto Principal.webp" alt="Nuestro Restaurante">
+                        <p>Mesa de Cena con taza de vino</p>
+                    </div>
+
+                </div>
+
+                <button aria-label="Siguiente" class="carousel-siguiente">
+                    ➤
+                </button>
+            </div>
+
+            <div role="tablist" class="carousel-indicadores"></div>
+        </div>
+    </section>
+
+    <!-- Nuestro Menú -->
+    <section class="section-main" id="menu">
+
+        <h3>Nuestro Menú</h3>
+
+        <div class="contain-nuestro-menu">
+
+            <div class="nuestro-menu" data-categoria="Ejecutivo">
+                <img src="./assets/imgs/plato-ejecutivo.jpg" alt="Imagen de plato ejecutivo siendo ejecutado" loading="lazy" id="botonModal">
+                <h5>Plato Ejecutivo</h5>
+            </div>
+
+            <div class="nuestro-menu" data-categoria="Panes">
+                <img src="./assets/imgs/plato-pan.jpg" alt="Imagen de pan" loading="lazy" id="botonModal">
+                <h5>Panes</h5>
+            </div>
+
+            <div class="nuestro-menu" data-categoria="Pastas">
+                <img src="./assets/imgs/plato-pastas.jpeg" alt="Imagen de pasta" loading="lazy">
+                <h5>Pastas</h5>
+            </div>
+
+            <div class="nuestro-menu" data-categoria="Pizzas">
+                <img src="./assets/imgs/plato-pizza.jpg" alt="Imagen de pizza entera" loading="lazy">
+                <h5>Pizzas</h5>
+            </div>
+
+            <div class="nuestro-menu" data-categoria="Vegetariano">
+                <img src="./assets/imgs/plato-vegetariano.jpg" alt="Imagen de plato vegetariano" loading="lazy">
+                <h5>Vegetariano</h5>
+            </div>
+
+            <div class="nuestro-menu" data-categoria="Bebidas">
+                <img src="./assets/imgs/plato-bebidas.jpg" alt="Bebidas" loading="lazy">
+                <h5>Bebidas</h5>
+            </div>
+        </div>
+
+        <dialog id="modal">
+            <button id="cerrarModal">Cerrar</button>
+            
+            <h6 id="titulo-categoria"></h6>
+            
+            <div id="contenido-modal"></div>
+
+        </dialog>
+
+    </section>
+
+    <section class="section-main" id="reservar">
+        
+        <fieldset class="campo-form liquid-container">
+            <div class="liquid"></div>
+
+            <h3>¡Reserve su lugar!</h3>
+            <p>Reserve un local para esta cita tan especial.</p>
+            <p>Nuestro local se encuentra a disposición para que se realice este evento tan especial con tus familiares y amigos cercanos.</p>
+
+            <br>
+
+            <form class="form">
+                <div class="contacto">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+
+                    <label for="surname">Apellido</label>
+                    <input type="text" name="surname" id="surname" placeholder="Tu apellido" required>
+                
+                    <label for="email">Mail de Contacto</label>
+                    <input type="email" name="email" id="contacto" placeholder="TuMail@mail.com" required>
+
+                    <label for="tel">Teléfono</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Código de Área + Número" required>
+
+                    <label for="texto">Mensaje:</label>
+                    <textarea name="texto" id="texto" cols="50" rows="6" placeholder="Observación..."></textarea>
+                
+
+                    <input type="submit" value="Enviar" class="enviar">
+                </div>
+            </form>
+
+        </fieldset>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="horarios">
+            <h3>Horários</h3>
+            <p>Lu. 9 am - 18 pm.</p>
+            <p>Ma. 9 am - 18 pm.</p>
+            <p>Mie. 9 am - 18 pm.</p>
+            <p>Jue. 9 am - 18 pm.</p>
+            <p>Vie. 9 am - 18 pm.</p>
+            <p>Sab. 10 am - 15 pm.</p>
+            <p>Dom. 10 am - 15 pm.</p>
+        </div>
+
+        <div class="direccion">
+            <h3>Rosario, Santa Fe</h3>
+            <p>Calle Papas Fritas n. 123</p>
+            <p>123-45576</p>
+
+            <a href="http://instagram.com/ggabi40" target="_blank"><img src="./assets/imgs/icons/icon instagram.png" alt="Instagram logo"></a>
+        </div>
+
+        <footer>
+            <p>Desenvolved with <strong>♥️</strong> by <a href="http://ggabi40.github.io/linktree" target="_blank">GGabi40</a>.</p>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
