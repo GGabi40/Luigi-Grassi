@@ -178,6 +178,7 @@ header .menu-links {
     max-width: 90%;
     height: auto;
     border-radius: 25px;
+    aspect-ratio: 3/2;
 }
 
 /* Second section */
@@ -203,6 +204,8 @@ header .menu-links {
 
     position: relative;
     margin: 20px auto;
+
+    aspect-ratio: 1/1;
 }
 
 .principal-plate img:hover {
@@ -308,6 +311,7 @@ header .menu-links {
     max-height: 400px;
     object-fit: cover;
     border-radius: 20px;
+    aspect-ratio: 3/2;
 }
 
 .carousel-indicadores .glider-dot {
@@ -359,6 +363,8 @@ header .menu-links {
     width: 200px;
 
     object-fit: cover;
+
+    aspect-ratio: 1/1;
 }
 
 .nuestro-menu h5 {
